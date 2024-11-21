@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 04-05.html-->
+    <!-- 04-5 오디오와 비디오 삽입하기-->
+    <!-- 다양한 멀티미디어 파일을 삽입하는 <object>,<embed> 태그
+        <object>태그는 오디오 파일뿐만 아니라 비디오, pdf등 다양한
+            멀티미디어 파일을 삽입할 때 사용합니다. 웹 문서 안에 다른 문서를
+            삽입할 때도 사용할 수 있죠
+            기본형
+            <object width="너비" height="높이" data="파일"></object>
+        -->
+        <object
+            data="pdf/lorem-ipsum-10pages.pdf"
+            width="900" height="800"
+        ></object>
+    <!-- <embed>태그는 html초기 버전부터 사용해 왔으므로
+        오래된 브라우저 까지 고려할 때 사용하기 좋습니다
+         기본형
+        <embed src="파일경로" width="너비" height="높이">
+        <embed> 태그는 오디오,비디오,이미지 등 다양한 멀티미디어 파일을 삽입할 수 있습니다          -->
+    <embed src="audio/beautiful-loop-253269.mp3">
+    <!-- 웹 브라우저에서 지원하는 멀티미디어 파일의 종류
+        종류 | 확장자 | 설명
+        비디오 | mp4 | 많이 사용하는 비디오 형식으로, 라이선스가 있지만
+        웹에서는 무료로 사용할 수 있습니다.
+        비디오 | webm | 화질이 우수하고 무료라서 mp4와 함게 많이 사용
+        오디오 | mp3 |  대부분의 음원에서 사용하느 형식으로 무료로 사용
+        오디오 | mp4, m4a | mp3의 문제점을 개선한 AAC코덱을 상요한 파일 형식입니다 -->
+        <!-- 오디오와 비디오 파일을 삽입하는 <audio>,<video>태그
+            <audio>,<video>태그는 사용법부터 속성까지 거으 비슷합니다-->
+    <audio src="audio/beautiful-loop-253269.mp3" controls></audio>
+    <hr>
+    <audio src="audio/beautiful-loop-253269.mp3"></audio>
+    <!-- <video> 태그는 너비값을 지정하지 않으면 웹 브라우저에 가득
+        차게 나타나므로 너기값을 적절히 지정하는것이 좋습니다-->
+    <hr>
+    <video src="video/3143824-uhd_2562_1440_24fps.mp4"></video>
+    <video src="video/3143824-uhd_2562_1440_24fps.mp4" controls>
+    </video>
+    <!-- <audio>, <video> 태그의 속성 알아보기
+    종류 | 설명
+    controls | 플레이어 화면에 컨트롤 바를 표시 합니다
+    autoplay | 오디오나 비디오를 자동으로 실행합니다
+    loop | 오디오나 비디오를 반복 재생합니다
+    muted | 오디오나 비디오의 소리를 제거합니다-->
+</body>
+</html>
