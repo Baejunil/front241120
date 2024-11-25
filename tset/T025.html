@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>회원가입</title>
+<style>
+
+</style>
+</head>
+<body>
+<h1>레드향 주문 하기</h1>
+<fieldset >
+    <legend><b>배송 정보</b></legend>
+    <ul>
+    <li><label>이름 <input type="text" id="name"></label></li>
+    <li><label>배송 주소 <input type="text" id="address"></label></li>
+    <li><label>이메일 <input type="text" id="email"></label></li>
+    <li><label>연락처 <input type="text" id="contact"></label></li>
+    <li><label>배송 지정</label><input type="datetime-local"> (주문일로부터 최소 3일 이후)</li>
+</select></li>
+<li>
+<label for="memo">메모</label>
+<textarea cols="40" rows="4"></textarea></li>
+    </ul>
+</fieldset>
+<div>
+    <input type="submit" value="주문하기">
+    <input type="submit" value="취소하기">
+</div>
+<hr>
+<form>
+    <h1>레드향 주문하기</h1>
+    <select >
+        <option selected>선물용 3kg</option>
+        <option>선물용 5kg</option>
+        <option>가정용 3kg</option>
+        <option>가정용 5kg</option>       
+    </select>
+</form>
+<hr>
+<h1>레드향 주문 하기</h1>
+<fieldset >
+    <legend><b>배송 정보</b></legend>
+    <ul>
+    <li><label>이름 <input type="text" id="name"></label></li>
+    <li><label>배송 주소 <input type="text" id="address"></label></li>
+    <li><label>이메일 <input type="text" id="email"></label></li>
+    <li><label>연락처 <input type="text" id="contact"></label></li>
+    <li><label>배송 지정</label><input type="datetime-local"> (주문일로부터 최소 3일 이후)</li>
+</select></li>
+<li>
+<label for="memo">메모</label>
+<textarea cols="40" rows="4"></textarea></li>
+    </ul>
+</fieldset>
+<div>
+    <button>주문하기</button>
+    <button>취소하기</button>
+</div>
+<hr>
+<h1> 레드향 회원 가입</h1>
+<form>
+    <fieldset>
+        <legend>사용자 정보</legend>
+        <ul>
+            <li><label>아이디<input type="text" id = "uid" autofocus placeholder="4자 ~ 10자 사이, 공백 없이" required></label></li>
+            <li><label>이메일<input type="email" id = "umail" required></label></li>
+            <li><label>비밀번호<input type="password" id = "pwd1" placeholder="문자와 숫자, 특수 기호 포함" required></label></li>
+            <li><label>비밀번호 확인<input type="password" id = "pwd2" required></label></li>
+            <li><label for="path">가입 경로</label>
+            <select id="path"> 
+            <option value="blog">블로그</option>
+            <option value="search">검색</option>
+            <option value="sns">SNS</option>
+            <option value="etc">기타</option>
+        </select></li>
+            <li>
+            <label for="memo">메모</label>
+            <textarea cols="40" rows="4" placeholder="남길 말씀이 있다면 여기에"></textarea></li>
+        </ul>
+    </fieldset>
+
+    <fieldset>
+        <legend>이벤트와 새로운 소식</legend>
+        <input type="radio" name = "mail" id = "mailing_y" value="mailing_yes">메일 수신
+        <input type="radio" name = "mail" id = "mailing_n" value="mailing_no" checked>메일 수신 안 함
+    </fieldset>
+    <div>
+        <input type="submit" value="가입하기">
+        <input type="submit" value="취소">
+    </div>
+</form>
+    <!--
+    1.웹 폼을 생성할때 사용하는 HTML태그는 1 form/2 input 입니다.  1번 form
+    2 사용자에게 한 줄짜리 텍스트 입력을 요구하는 폼 요소는 (1 <input type="password"> /
+    2 <input type="text"> ) 입니다. 2번 <input type="text">
+    3 폼 데이터를 서버로 전송하는 버튼을 만들 때 사용하는 <input> 태그의 type값은 ( 1 submit /
+   2 button ) 입니다. 1번 submit
+    4 <select> 태그 내부에서 개별 옵션을 정의할 때 사용하는 태그는 (1 <option> / 2 <item> )
+    입니다. 1번 <option>
+    5 <label> 태그의 주요 목적은 무엇인가요? 2번
+      1 폼 요소를 그룹화하기 위해
+      2 사용자가 폼 요소를 더 쉽게 식별할 수 있도록 도와주기 위해
+      3 데이터를 서버로 전송하기 위해
+    6 사용자로부터 비밀번호를 안전하게 입력받을 때 사용하는 <input> 태그의 type 속성값은
+    입니다. password
+    7 사용자가 입력한 데이터를 초기화하고 폼을 비울 때 사용하는 <input> 태그의 type 속성값은
+    입니다. reset
+    8 <input type="radio">를 쓰면 사용자가 여러 옵션 중 하나만 선택할 수 있습니다. (O/X) 0
+    9 <textarea> 태그는 닫는 태그가 필요하지 않습니다. (O/X) x --> 
+<!-- 10번 사용자 이름을 입력받는 필드를 작성하려고 합니다 빈칸을 채워 코드를 완성하시오-->
+<label for="username">사용자 이름: </label>
+<input type="text" id="username" name="username">
+<hr>
+<!-- 다음 완성화면은 예약 정보 페이지의 일부 입니다 코드에서 빈칸을 채워 예약 정보폼을 완성하세요-->
+<fieldset>
+    <h2>예약 정보</h2>
+<form>
+    <ul>
+        <li>
+        <label for="r-name">이름</label>
+        <input type="text" id="r-name">
+        </li>
+        <li>
+        <label for="r-phone">전화</label>
+        <input type="tel" id="r-phone">
+        </li>
+        <li>
+        <label for="r-email">이메일</label>
+        <input type="email" id="r-email">
+        </li>
+        <li>
+        <input type="submit" value="예약하기">
+        </li>
+    </ul>  
+</form>
+</fieldset>
+</div>
+</body>
+</html>

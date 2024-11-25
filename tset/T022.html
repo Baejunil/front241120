@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>날짜와 시간 레드향 로그인 </title>
+</head>
+<body>
+    <h1>날짜 지정하기</h1>
+    <input type="date">
+    <input type="month">
+    <input type="week">
+    <hr>
+    <h1>시간 지정하기</h1>
+    <input type="time">
+    <input type="datetime-local">
+    <hr>
+    <h1>날짜 범위 지정하기</h1>
+    <input type="date" min="2024-05-01" max="2024-05-15">
+    <hr>
+    <h1>반품 정보</h1>
+    <p>만일 수령한 상품에 문제가 있다면 즉시 반품 신청해 주세요.</p>
+    <p>반품 신청시 상품의 상태를 사진으로 첨부해 주세요.</p>
+    <form>
+        <button type="submit">반품하기</button>
+        <button type="reset">취소하기</button>
+    </form>
+    <hr>
+    <form>
+        <label>
+            아이디:<input type="text">
+            비밀번호:<input type="text">
+            <button style="background-color: black; color: white; padding: 7px 10px; font-size:12px ; border: none;  border-radius: 5px; ">
+                <b>로그인</b>
+            </button>
+        </label>
+    </form>
+    <h1>반품 정보</h1>
+    <p>만일 수령한 상품에 문제가 있다면 즉시 <b>반품 신청</b>해 주세요.<br>
+        반품 신청시 상품의 상태를 사진으로 첨부해 주세요.</p>
+    <input type="file" value="파일 선택">
+        <hr>
+    <form action="receive" method="post">
+        <input type="submit" value="반품하기"> 
+        <input type="reset" value="취소하기">
+    </form>
+    <hr>
+    <form>
+        <label>아이디:<input type="text"></label>
+        <label>비밀번호:<input type="password"></label>
+        <input type="hidden" name="url" value="사이트를 통한 직접 로그인">
+        <input type="submit" value="로그인">
+    </form>
+    <hr>
+    <fieldset style="width: 600px;">
+        <legend><b>배송 정보</b></legend>
+        <p style="margin: 10px 0;">
+            <label style="display: inline-block; width: 100px;">이름</label>
+            <input id="name" type="text" style="width: calc(100% - 120px); font-size: 1em;" required>
+        </p>
+        <p style="margin: 10px 0;">
+            <label style="display: inline-block; width: 100px;">배송 주소</label>
+            <input id="address" type="text" style="width: calc(100% - 120px); font-size: 1em;" required>
+        </p>
+        <p style="margin: 10px 0;">
+            <label  style="display: inline-block; width: 100px;">이메일</label>
+            <input id="email" type="text" style="width: calc(100% - 120px); font-size: 1em;">
+        </p>
+        <p style="margin: 10px 0;">
+            <label style="display: inline-block; width: 100px;">연락처</label>
+            <input id="contact" type="text" placeholder="하이픈 빼고 입력(01012345678)" style="width: calc(100% - 120px); font-size: 1em;" required>
+        </p>
+        <p style="margin: 10px 0;">
+            <label  style="display: inline-block; width: 100px;">배송 지정</label> <input type="datetime-local"> (주문일로부터 최소 3일 이후)</p>
+    </fieldset>
+    <div style= "width: 600px; margin-left: 20px; margin-top: 20px;  text-align: center; ">
+        <input type="submit" value="주문하기" style="width: 200px; height: 50px; background-color: rgba(250, 250, 250, 1) border-radius 5px; font-size: 16px; margin-right: 90px;">  
+        <input type="reset" value="취소하기" style="width: 200px; height: 50px; background-color:rgba(250, 250, 250, 1) border-radius 5px; font-size: 16px; ">
+    
+    </div>
+    <hr>
+    <fieldset style="width: 1000px;">
+        <legend><b>배송 정보</b></legend>
+        <p style="margin: 10px 0;">
+            <label style="display: inline-block; width: 100px;">주문 상품</label>
+            <input id="name" type="text" style="width: calc(43% ); font-size: 1em;" value="상품용 3kg" readonly>
+        <p style="margin: 10px 0;">
+            <label style="display: inline-block; width: 100px;">이름</label>
+            <input id="name" type="text" style="width: calc(43% ); font-size: 1em;" required>
+        </p>
+        <p style="margin: 10px 0;">
+            <label style="display: inline-block; width: 100px;">배송 주소</label>
+            <input id="address" type="text" style="width: calc(43% ); font-size: 1em;" required>
+        </p>
+        <p style="margin: 10px 0;">
+            <label  style="display: inline-block; width: 100px;">이메일</label>
+            <input id="email" type="text" style="width: calc(43% ); font-size: 1em;">
+        </p>
+        <p style="margin: 10px 0;">
+            <label style="display: inline-block; width: 100px;">연락처</label>
+            <input id="contact" type="text" placeholder="하이픈 빼고 입력(01012345678)" style="width: calc(43% ); font-size: 1em;" required>
+        </p>
+        <p style="margin: 10px 0;">
+            <label  style="display: inline-block; width: 100px;">배송 지정</label> <input type="datetime-local"> (주문일로부터 최소 3일 이후)</p>
+    </fieldset>
+    <div style="width: 1400px; margin-top: 20px; text-align: center;">
+        <input type="submit" value="주문하기" style="width: 200px; height: 50px; background-color: rgba(250, 250, 250, 1) border-radius 5px; font-size: 16px; margin-right: 90px;">  
+        <input type="reset" value="취소하기" style="width: 200px; height: 50px; background-color:rgba(250, 250, 250, 1) border-radius 5px; font-size: 16px; ">
+    </div>
+</body>
+</html>
