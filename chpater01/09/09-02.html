@@ -14,9 +14,100 @@
  body{
     background-image: url(images/202107018657_500.jpg);
  }
+ /*
+ 배경 이미지의 반복 방법을 지정하는 background-repeat속성
+ 종류 | 설명
+ repeat | 브라우저 화면에 가득 찰 때까지 가로와 세로로 반복합니다
+ 기본값입니다
+ repeat-x | 브라우저 화면 너비에 가득 찰 때까지 가로로 반복합니다
+ repeat-y | 브라우저 화면 높이에 가득 찰 때까지 세로로 반복합니다.
+ no-repeat | 한번 만 표시하고 반복하지 않습니다.
+ */
+ .contaliner{
+    margin: 0 auto;
+    width: 800px;
+    height: 1500px;
+    background-image: url('https://placecats.com/neo_banana/300/200');
+    /*background-repeat: no-repeat;*/
+    background-repeat: repeat-y;
+ }
+ /* 배경 이미지의 위치를 조절하는 background-position 속성
+ 기본형
+ backgroind-position:<수평 위치> <수직 위치>;
+ 위치: left | center | right | <백분율> | <길이의 값>*/
+
+ .contaliner2{
+    margin: 10px auto;
+    width: 800px;
+    height: 200px;
+    background-image: url('https://placecats.com/neo_banana/300/200');
+    background-repeat: no-repeat;
+    background-position: right center;
+    line-height: 200px;
+    text-align: center;
+ }
+ /*
+ 배경 이미지의 적용 범위를 조절하는 bachground-orgin 속성
+ 종류 | 설명
+ content-box | 박스 모델에서 내용 부분에만 배경 이미지를 표시합니다
+ padding-box | 박스 모델에서 패딩까지 배경 이미지를 표시하빈다
+ 기본 값입니다
+ border-box | 박스 모델에서 테두리 까지 배경 이미지를 표시합니다
+ */
+ /* 배경 이미지 고정하는 background-attachment 속성
+ 이 속성을 사용하면 배경 이미지를 고정할 수 있습니다*/
+ /*
+ 
+ scroll| 화면을 스크롤하면 이미지도 스크롤 됩니다 기본값이다
+ fixed | 화면의 스크롤하면 배경이미지는 고정되고 내용만 그크롤 됩니다*/
+ 
+ .contaliner3{
+    margin: 20px auto;
+    width: 800px;
+    height: 200px;
+    background-image: url('https://placecats.com/neo_banana/300/200');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+ }
+
+ /*
+ background 속성 하나로 배경 이미지 제어하기
+
+ */
+ .contaliner4{
+    margin: 20px auto;
+    width: 800px;
+    height: 200px;
+    background: url('https://placecats.com/neo_banana/300/200') no-repeat fixed center center;}
+ 
+/*
+배경 이미지 크기를 조절하는 backgorund-size 속성
+종류|설명
+auto | 원래 배경 이미지 크기만큼 표시합니다 기본값입니다
+contain | 이미지의 
+cover| ㅂ
+*/
+
+.contaliner4{
+    margin: 20px auto;
+    width: 320px;
+    height: 200px;
+    background: url('https://placecats.com/neo_banana/300/200')
+    no-repeat;
+    border : 1px solid red;
+    background-size: cover;
+    }
 </style>
 </head>
 <body>
-    
+    <div class="contaliner4"></div>
+    <div class="contaliner3">
+        <h1>네코네코너케ㅗㅋ네ㅗㅋ네ㅗㄴ케ㅗㄴ케ㅗㄴ케ㅗㅗㅔㄴ케ㅗㄴ코케노코넨코네코네코너케ㅗㅋ네ㅗㅋ네ㅗㄴ케ㅗㄴ케ㅗㄴ케ㅗㅗㅔㄴ케ㅗㄴ코케노코넨코네코네코너케ㅗㅋ네ㅗㅋ네ㅗㄴ케ㅗㄴ케ㅗㄴ케ㅗㅗㅔㄴ케ㅗㄴ코케노코넨코네코네코너케ㅗㅋ네ㅗㅋ네ㅗㄴ케ㅗㄴ케ㅗㄴ케ㅗㅗㅔㄴ케ㅗㄴ코케노코넨코
+            네코네코너케ㅗㅋ네ㅗㅋ네ㅗㄴ케ㅗㄴ케ㅗㄴ케ㅗㅗㅔㄴ케ㅗㄴ코케노코넨코네코네코너케ㅗㅋ네ㅗㅋ네ㅗㄴ케ㅗㄴ케ㅗㄴ케ㅗㅗㅔㄴ케ㅗㄴ코케노코넨코네코네코너케ㅗㅋ네ㅗㅋ네ㅗㄴ케ㅗㄴ케ㅗㄴ케ㅗㅗㅔㄴ케ㅗㄴ코케노코넨코
+            네코네코너케ㅗㅋ네ㅗㅋ네ㅗㄴ케ㅗㄴ케ㅗㄴ케ㅗㅗㅔㄴ케ㅗㄴ코케노코넨코네코네코너케ㅗㅋ네ㅗㅋ네ㅗㄴ케ㅗㄴ케ㅗㄴ케ㅗㅗㅔㄴ케ㅗㄴ코케노코넨코네코네코너케ㅗㅋ네ㅗㅋ네ㅗㄴ케ㅗㄴ케ㅗㄴ케ㅗㅗㅔㄴ케ㅗㄴ코케노코넨코
+        </h1>
+    </div>
+    <div class="contaliner2"> <h1>귀여운 네코네코</h1></div>
+    <div class="contaliner"></div>
 </body>
 </html>

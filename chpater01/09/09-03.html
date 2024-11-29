@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+/*  09-03.html
+ 09-3 그라데이션 효과로 배경 꾸미기*/
+ /*
+ 선형 그리데이션
+ 선형 그러데이션이란 색상 수직,수평 또는 대각선 방향으로
+ 일정하게 변하는 것을 말합니다.
+ 기본형
+ linear-gradient(to<방향>또는<각도>,<색상 중지점>,
+ [<색상 중지점>])
+ */
+ /*방향
+ 방향을 지시할 때는 to 예약어와 함께 사용합니다. to 다음에는 
+ 끝나는 방향을 나타내는 예약어를 최대 2개까지 사용할 수 있습니다
+ 이때 예약어는 left와 right,top과 bottom을 사용합니다
+ */
+ .box1{
+    width: 800px;
+    height: 300px;
+    background: linear-gradient(violet,green);
+ }
+ /*각도
+ 값은 deg을 붙여서 표기
+ */
+ .box2{
+    width: 800px;
+    height: 300px;
+    background: linear-gradient(160deg,red,orange,yellow,green,blue);
+ }
+ /*
+ 색상 중지점
+ 색상을 지정하는 부분에 색상만 지정할 수 있고, 색상과 함께 
+ 중지점의 위치도 함께 지정할 수 있습니다*/
+ .box3{
+    width: 800px;
+    height: 300px;
+    background: linear-gradient(160deg,red,orange 10%,yellow 80%);
+ }
+ /*원형 그라데이션
+ 원 또는 타원 중심에서부터 동심원을 그리며 바깥 방향으로 색상이 변합니다
+ 기본형
+ radial-gradient(<모양> <크기>at <위치>, <색상 중지점>,
+ [<색상 중지점>,....])
+ */
+ .box4{
+    width: 800px;
+    height: 300px;
+    background: radial-gradient(160deg,red,orange) ;
+ }
+    </style>
+</head>
+<body>
+    <div class="box4"></div>
+    <div class=" box3"></div>
+    <div class="box2"></div>
+    <div class="box1"></div>
+</body>
+</html>
