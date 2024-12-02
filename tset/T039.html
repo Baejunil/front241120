@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+.box{
+    width: 200px;
+    height: 70px;
+    background-color: yellow;
+    margin: 10px;
+    text-align: center;
+    font-size: 24px;
+    line-height: auto;
+}
+.box2{
+    width: 200px;
+    height: 70px;
+    background-color: green;
+    margin: 10px;
+    text-align: center;
+    font-size: 24px;
+    line-height: auto;
+}
+#flex1 {
+            width: 800px;
+            border: 1px solid black;
+            background-color: #ccc;
+            display: flex;
+            margin-bottom: 10px;
+        }
+        #flex2 {
+            width: 800px;
+            border: 1px solid black;
+            background-color: #ccc;
+            flex-direction: row-reverse;
+            display: flex;
+            margin-bottom: 10px;
+        }
+        #flex3 {
+            width: 800px;
+            border: 1px solid black;
+            background-color: #ccc;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+        }
+        #flex4 {
+            width: 800px;
+            border: 1px solid black;
+            background-color: #ccc;
+            display: flex;
+            flex-direction: column-reverse;
+            margin-bottom: 10px;
+        }
+        #flex5 {
+            width: 800px;
+            border: 1px solid black;
+            background-color: #ccc;
+            display: flex;
+            flex-wrap: nowrap;
+            margin-bottom: 10px;
+        }
+        #flex6 {
+            width: 800px;
+            border: 1px solid black;
+            background-color: #ccc;
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 10px;
+        }
+        #flex7 {
+            width: 800px;
+            border: 1px solid black;
+            background-color: #ccc;
+            display: flex;
+            flex-wrap: wrap-reverse;
+            margin-bottom: 10px;
+        }
+        #flex8 {
+            width: 1300px;
+            border: 1px solid black;
+            background-color: #ccc;
+            display: flex;
+            flex-wrap: nowrap;
+            margin-bottom: 10px;
+        }
+        #flex9 {
+            width: 1300px;
+            border: 1px solid black;
+            background-color: #ccc;
+            justify-content: flex-end;
+            display: flex;
+            flex-wrap: nowrap;
+            margin-bottom: 10px;
+        }
+        #flex10 {
+            width: 1300px;
+            border: 1px solid black;
+            background-color: #ccc;
+            justify-content: center;
+            display: flex;
+            flex-wrap: nowrap;
+            margin-bottom: 10px;
+        }
+        #flex11 {
+            width: 1300px;
+            border: 1px solid black;
+            background-color: #ccc;
+            justify-content: space-between;
+            display: flex;
+            flex-wrap: nowrap;
+            margin-bottom: 10px;
+        }
+        #flex12 {
+            width: 1300px;
+            border: 1px solid black;
+            background-color: #ccc;
+            justify-content: space-around;
+            display: flex;
+            flex-wrap: nowrap;
+            margin-bottom: 10px;
+        }
+        #flex13 {
+            width: 1300px;
+            border: 1px solid black;
+            background-color: #ccc;
+            justify-content: space-evenly;
+            display: flex;
+            flex-wrap: nowrap;
+            margin-bottom: 10px;
+        }
+        #flex14 {
+            width: 800px;
+            border: 1px solid black;
+            background-color: #ccc;
+            justify-content: flex-end;
+            display: flex;
+            flex-wrap: nowrap;
+            margin-bottom: 10px;
+        }
+        #flex15 {
+            width: 800px;
+            border: 1px solid black;
+            background-color: #ccc;
+            justify-content: flex-start;
+            display: flex;
+            flex-wrap: nowrap;
+            margin-bottom: 10px;
+        }
+        #logo1 {
+            margin-right: auto;
+        }
+        #logo2 {
+            margin-left: auto;
+        }  
+
+
+</style>
+</head>
+<body>
+
+    <div id="flex1">
+        <div class="box"><p>1</p></div>
+        <div class="box2"><p>2</p></div>
+        <div class="box"><p>3</p></div>
+    </div>
+
+    <div id="flex2">
+        <div class="box"><p>3</p></div>
+        <div class="box2"><p>2</p></div>
+        <div class="box"><p>1</p></div>
+    </div>
+    <div id="flex3">
+        <div class="box"><p>1</p></div>
+        <div class="box2"><p>2</p></div>
+        <div class="box"><p>3</p></div>
+        
+    </div>
+    <div id="flex4">
+        <div class="box"><p>1</p></div>
+        <div class="box2"><p>2</p></div>
+        <div class="box"><p>3</p></div>
+    </div>
+
+    <div id="flex5">
+        <div class="box"><p>1</p></div>
+        <div class="box2"><p>2</p></div>
+        <div class="box"><p>3</p></div>
+        <div class="box2"><p>4</p></div>
+        <div class="box"><p>5</p></div>
+        <div class="box2"><p>6</p></div>
+    </div>
+    <div id="flex6">
+        <div class="box"><p>1</p></div>
+        <div class="box2"><p>2</p></div>
+        <div class="box"><p>3</p></div>
+        <div class="box2"><p>4</p></div>
+        <div class="box"><p>5</p></div>
+        <div class="box2"><p>6</p></div>
+    </div>
+    <div id="flex7">
+        <div class="box2"><p>1</p></div>
+        <div class="box"><p>2</p></div>
+        <div class="box2"><p>3</p></div>
+        <div class="box"><p>4</p></div>
+        <div class="box2"><p>5</p></div>
+        <div class="box"><p>6</p></div>
+    </div>
+    <div id="flex8">
+        <div class="box"><p>1</p></div>
+        <div class="box2"><p>2</p></div>
+        <div class="box"><p>3</p></div>
+        <div class="box2"><p>4</p></div>
+        </div>
+     <div id="flex9">
+        <div class="box"><p>1</p></div>
+        <div class="box2"><p>2</p></div>
+        <div class="box"><p>3</p></div>
+        <div class="box2"><p>4</p></div>
+        </div>
+    <div id="flex10">
+        <div class="box"><p>1</p></div>
+        <div class="box2"><p>2</p></div>
+        <div class="box"><p>3</p></div>
+        <div class="box2"><p>4</p></div>
+        </div>
+    <div id="flex11">
+        <div class="box"><p>1</p></div>
+        <div class="box2"><p>2</p></div>
+        <div class="box"><p>3</p></div>
+        <div class="box2"><p>4</p></div>
+        </div>
+    <div id="flex12">
+        <div class="box"><p>1</p></div>
+        <div class="box2"><p>2</p></div>
+        <div class="box"><p>3</p></div>
+        <div class="box2"><p>4</p></div>
+        </div>
+    <div id="flex13">
+        <div class="box"><p>1</p></div>
+        <div class="box2"><p>2</p></div>
+        <div class="box"><p>3</p></div>
+        <div class="box2"><p>4</p></div>
+        </div>
+    <div id="flex14">
+        <div class="box" id="logo1"><p>1</p></div>
+        <div class="box2"><p>2</p></div>
+        <div class="box"><p>3</p></div>
+    </div>
+    <div id="flex15">
+        <div class="box"><p>1</p></div>
+        <div class="box2"><p>2</p></div>
+        <div class="box" id="logo2"><p>3</p></div>
+    </div>
+   
+    </body>
+</html>
