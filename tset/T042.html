@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex Box Layout</title>
+  <style>    
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
+
+    .pic {
+      flex: 1 1 30%;
+      max-width: 30%;
+      padding: 5px;
+    }
+
+    .pic img {
+      width: 100%;
+      height: auto;
+    }
+
+    @media screen and (min-width: 1025px) {
+      .pic {
+        flex: 1 1 30%;
+        max-width: 30%;
+      }
+    }
+
+    @media screen and (min-width: 769px) and (max-width: 1024px) {
+      .pic {
+        flex: 1 1 45%;
+        max-width: 45%;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      .pic {
+        flex: 1 1 100%;
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="pic">
+      <img src="images/kitten-1.jpg" alt="아기 고양이 사진">
+    </div>
+    <div class="pic">
+      <img src="images/kitten-2.jpg" alt="아기 고양이 사진">
+    </div>
+    <div class="pic">
+      <img src="images/kitten-3.jpg" alt="아기 고양이 사진">
+    </div>
+  </div>
+</body>
+</html>

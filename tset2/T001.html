@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1></h1>
+    <hr>
+    <h1></h1>
+    <h1></h1>
+    <h1></h1>
+    <h1></h1>
+    <hr><hr>
+    <div id="a"></div>
+    <div id="b"></div>
+    <hr><hr>
+    <img class="rect">
+    <img class="rect">
+    <img class="rect">
+    <img class="rect">
+    <hr>
+    <!-- div 태그 25개 -->
+<div class="gra"></div><div class="gra"></div><div class="gra"></div><div class="gra"></div><div class="gra"></div>
+<div class="gra"></div><div class="gra"></div><div class="gra"></div><div class="gra"></div><div class="gra"></div>
+<div class="gra"></div><div class="gra"></div><div class="gra"></div><div class="gra"></div><div class="gra"></div>
+<div class="gra"></div><div class="gra"></div><div class="gra"></div><div class="gra"></div><div class="gra"></div>
+<div class="gra"></div><div class="gra"></div><div class="gra"></div><div class="gra"></div><div class="gra"></div>
+
+<script>
+const h1 = document.querySelectorAll("h1");
+h1.forEach(v => {
+    v.textContent = "HEADERS";
+    v.style.color = "white";
+    v.style.backgroundColor = "black";
+    v.style.padding = "10px";
+});
+</script>
+
+<script>
+    const a = document.querySelector("#a");
+    a.textContent = "<h1>textContent 속성</h1>";
+    const b = document.querySelector("#b");
+    b.innerHTML = "<h1>innerHTML 속성</h1>";
+
+    const rects = document.querySelectorAll(".rect");
+    rects.forEach((rect, index) => {
+        const width = (index + 1) * 50;
+        const src = `https://placecats.com/${width}/100`;
+        rect.setAttribute("src", src);
+    });
+</script>
+
+<script>
+    const divs = document.querySelectorAll(".gra"); 
+    divs.forEach((div, index) => {
+        const val = index * 10;  
+        const result = val;  
+        div.style.height = "20px";  
+        div.style.backgroundColor = `rgb(${result}, ${result}, ${result})`;  // RGB 색상으로 설정
+    });
+</script>
+</body>
+</html>
