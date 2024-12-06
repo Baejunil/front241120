@@ -176,3 +176,50 @@ nav .logo {
     width: 100%;
     height: auto;
 }
+/*---반응형 (선택 가이드 영역)*/
+@media only screen and (max-width: 768px) {
+    .card {
+      flex-basis: 100%;
+    }
+  }
+@media only screen and (min-width: 769px) and (max-width: 1220px) {
+.card {
+    flex-basis: calc(50% - 15px);
+}
+}
+/* ------FAQ영역--------*/
+.faq .accordion{
+    width: 100%;
+    max-width: 750px;
+    margin: 60px auto;
+}
+.accordion li{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+.accordion li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 25px;
+    font-weight: 500;
+    background:#303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+
+.accordion input[type="radui"]{
+    display: none;
+}
+.accordion .content{
+    background: #3b3b3b;
+    font-size: 23px;
+    line-height: 1.6;
+    text-align: 'left';
+    padding: 0 2 0px;
+    max-height: 0;
+    overflow: hidden;
+
+}

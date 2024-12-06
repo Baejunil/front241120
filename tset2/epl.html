@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EPL 선수 퀴즈</title>
+  <link rel="stylesheet" href="ddd.css">
+</head>
+<body>
+  <header>
+    <h1>EPL 선수 퀴즈</h1>
+    <nav>
+      <ul>
+        <li><a href="T003index.html">홈</a></li>
+        <li><a href="korea.html">한국 선수 퀴즈</a></li>
+        <li><a href="laliga.html">라리가 선수 퀴즈</a></li>
+        <li><a href="bundesliga-players-quiz.html">분데스리가 선수 퀴즈</a></li>
+        <li><a href="ligue-1-players-quiz.html">리그앙 선수 퀴즈</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2>퀴즈 시작</h2>
+      <p>아래의 질문에 답해보세요!</p>
+      <form id="quiz-form">
+        <br>
+        <img src="images/son.png" alt="">
+        <p>Q1. 이 선수가 소속된적이 없는팀을 고르시오?</p>
+        <label><input type="radio" name="question1" value="a"> 맨체스터 유나이티드</label><br>
+        <label><input type="radio" name="question1" value="b"> 토트넘</label><br>
+        <label><input type="radio" name="question1" value="c"> 함부르크sv</label><br>
+        <label><input type="radio" name="question1" value="d"> 레버쿠젠</label><br>
+        <br>
+        <img src="images/Amad.png" alt="">
+        <p>Q2. 이 선수의 포지션은?</p>
+        <label><input type="radio" name="question2" value="a"> 미드필더</label><br>
+        <label><input type="radio" name="question2" value="b"> 공격수</label><br>
+        <label><input type="radio" name="question2" value="c"> 수비수</label><br>
+        <label><input type="radio" name="question2" value="d"> 골키퍼</label><br>
+        
+        <button type="button" onclick="checkAnswers()">결과 확인</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Who Are Ya?</p>
+  </footer>
+  <script>
+    function checkAnswers() {
+      const answers = {
+        question1: "a", // 맨유
+        question2: "b"  // 공격수
+      };
+      let score = 0;
+      
+      for (let question in answers) {
+        const userAnswer = document.querySelector(`input[name="${question}"]:checked`);
+        if (userAnswer && userAnswer.value === answers[question]) {
+          score++;
+        }
+      }
+
+      alert(`점수는 ${score}점 입니다!`);
+    }
+  </script>
+</body>
+</html>
