@@ -1,30 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>게임 시작</title>
-  <link rel="stylesheet" href="T003.css">
+  <link rel="stylesheet" href="css/T003.css">
 </head>
 <body>
   <header>
-    <h1>게임 시작</h1>
+    <h1>4대리그 및 한국선수 퀴즈</h1>
     <nav>
       <ul>
         <li><a href="T003index.html">홈</a></li>
       </ul>
     </nav>
   </header>
+
   <main>
     <section>
       <h2>게임 규칙</h2>
       <p>자기가 원하는 종목을 찾아서 퀴즈를 고르세요.</p>
-      <button onclick="window.location.href='korea.html'">한국 선수 퀴즈</button>
-      <button onclick="window.location.href='epl.html'">epl 선수 퀴즈</button>
+      <p>그 후 선수 사진을 보고 퀴즈에 정답을 고르세요</p>
+      
+      <button onclick="window.location.href='T003koreaset.html'">한국 선수 퀴즈</button>
+      <button onclick="window.location.href='T003eplset.html'">epl 선수 퀴즈</button>
+      <button onclick="window.location.href='T003laligaset.html'">라리가 선수 퀴즈</button>
+      <button onclick="window.location.href='T003ligue1set.html'">리그앙 선수 퀴즈</button>
+      <button onclick="window.location.href='T003banset.html'">분데스리가 선수 퀴즈</button>
     </section>
   </main>
+
   <footer>
     <p>&copy; 2024 Who Are Ya?</p>
   </footer>
+
+  <!-- game.js 파일을 여기에 연결 -->
+  <script src="js/game.js"></script>
 </body>
 </html>

@@ -4,18 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>라리가 선수 퀴즈</title>
-  <link rel="stylesheet" href="ddd.css">
+  <link rel="stylesheet" href="css/ddd.css">
 </head>
 <body>
   <header>
     <h1>라리가 선수 퀴즈</h1>
     <nav>
       <ul>
-        <li><a href="T003index.html">홈</a></li>
-        <li><a href="korea.html">한국 선수 퀴즈</a></li>
-        <li><a href="epl.html">EPL 선수 퀴즈</a></li>
-        <li><a href="bundesliga-players-quiz.html">분데스리가 선수 퀴즈</a></li>
-        <li><a href="ligue-1-players-quiz.html">리그앙 선수 퀴즈</a></li>
+        <h2><li><a href="T003index.html">홈</a></li></h2>
       </ul>
     </nav>
   </header>
@@ -23,22 +19,27 @@
     <section>
       <h2>퀴즈 시작</h2>
       <p>아래의 질문에 답해보세요!</p>
+       <!-- 난이도에 맞는 리그 이름과 타이머 -->
+       <div id="difficulty-info">
+        <h4>선택된 난이도: <span id="difficulty-name">없음</span></h4>
+        <h4>남은 시간: <span id="timer">00</span>초</h4>
+      </div>
       <form id="quiz-form">
         <br>
-        <img src="images/saul.png" alt="">
+        <img src="images/saul.png" alt=""> <!-- 사울 니게스-->
         <p>Q1. 이 선수가 소속된적이 없는팀을 고르시오?</p>
         <label><input type="radio" name="question1" value="a"> ATM</label><br>
         <label><input type="radio" name="question1" value="b"> 레알바예카노</label><br>
         <label><input type="radio" name="question1" value="c"> 세비야fc</label><br>
         <label><input type="radio" name="question1" value="d"> 바르셀로나</label><br>
         <br>
-        <img src="images/kounde.png" alt="">
+        <img src="images/kounde.png" alt=""> <!-- 쥘 쿤데-->
         <p>Q2. 이 선수의 포지션은?</p>
         <label><input type="radio" name="question2" value="a"> 미드필더</label><br>
         <label><input type="radio" name="question2" value="b"> 공격수</label><br>
         <label><input type="radio" name="question2" value="c"> 수비수</label><br>
         <label><input type="radio" name="question2" value="d"> 골키퍼</label><br>
-        
+        <br>
         <button type="button" onclick="checkAnswers()">결과 확인</button>
       </form>
     </section>
@@ -46,23 +47,7 @@
   <footer>
     <p>&copy; 2024 Who Are Ya?</p>
   </footer>
-  <script>
-    function checkAnswers() {
-      const answers = {
-        question1: "d", // 바르셀로나
-        question2: "c"  // 수비수
-      };
-      let score = 0;
-      
-      for (let question in answers) {
-        const userAnswer = document.querySelector(`input[name="${question}"]:checked`);
-        if (userAnswer && userAnswer.value === answers[question]) {
-          score++;
-        }
-      }
-
-      alert(`점수는 ${score}점 입니다!`);
-    }
+  <script src="js/laliga.js">
   </script>
 </body>
 </html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>축구 선수 퀴즈</title>
+  <link rel="stylesheet" href="css/game2.css">
+</head>
+<body>
+  <header>
+    <h1>축구 선수 퀴즈</h1>
+    <nav>
+      <ul>
+        <li><a href="T003index.html">홈</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2>퀴즈 시작</h2>
+      <p>축구 선수의 이미지를 보고 정답을 입력하세요!</p>
+
+      <div id="difficulty-info">
+        <h4>선택된 난이도: <span id="difficulty-name">없음</span></h4>
+        <h4>남은 시간: <span id="timer">00</span>초</h4>
+      </div>
+
+      <form id="quiz-form">
+        <!-- 질문 1 -->
+        <div class="question-block">
+          <img src="images/futre.jpg" alt="Player 1" class="player-icon">
+          <p>Q1. 이 선수의 이름은 무엇인가요?</p>
+          <input type="text" name="question1" placeholder="선수 이름 입력" required>
+        </div>
+
+        <!-- 질문 2 -->
+        <div class="question-block">
+            <img src="images/Molde.png" alt="Player 2" class="player-icon">
+            <img src="images/Red.png" alt="Player 2" class="player-icon">
+            <img src="images/DM.png" alt="Player 2" class="player-icon">
+            <img src="images/City.jpg" alt="Player 2" class="player-icon">
+          <p>Q2. 이팀들을 거쳐간 선수를 맞추시오(출제자 의도를 파악해야함)?</p>
+          <input type="text" name="question2" placeholder="국가 입력" required>
+        </div>
+        
+        <button type="button" id="submit-btn">결과 확인</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 축구 퀴즈 게임</p>
+  </footer>
+  <script src="js/game2.js"></script>
+</body>
+</html>
